@@ -21,19 +21,3 @@ img {
     max-width: 600px;
     margin: 0 auto 40px;
 }
-
-/* This is the new code for the boxes */
-.box-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.box {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: left;
-}
