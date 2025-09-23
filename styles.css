@@ -1,21 +1,39 @@
 body {
-	font-family: 'JetBrains Mono', monospace;
-	background-color: beige;
-     }
-img {
-	  display: block;
-          margin-left: auto;
-	  margin-right: auto;
-    }
-container {
-	  display: flex;
-	  gap: 20px; /* Adds space between the boxes */
-	  /*  max-width: 900px; /* Optional: A max width for the container */
-	  /*  margin: 0 auto;  Optional: Centers the container on the page */
-	}
+    font-family: 'JetBrains Mono', monospace;
+    background-color: beige;
+}
 
-box {
-		  flex: 1; /* Allows each box to grow and take up equal space */
-		  padding: 20px; /* Adds space inside the box so the content isn't right on the edge */
-		  background-color: white; /* A white color for the boxes */
-     }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This is from your existing file, which is a good reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* This is the new code for the boxes */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+}
